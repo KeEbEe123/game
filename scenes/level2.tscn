@@ -487,6 +487,16 @@ scale = Vector2(0.29, 0.29)
 text = "YOU DID IT"
 metadata/_edit_use_anchors_ = true
 
+[node name="moveHint2" type="Label" parent="TileMap" unique_id=440170362]
+offset_left = 132.00002
+offset_top = 4.0
+offset_right = 358.0
+offset_bottom = 53.0
+rotation = -0.0011892566
+scale = Vector2(0.29, 0.29)
+text = "PRESS E TO SUMMMMON"
+metadata/_edit_use_anchors_ = true
+
 [node name="Player" parent="." unique_id=1370454869 instance=ExtResource("3_alqfr")]
 position = Vector2(-168, -1)
 scale = Vector2(0.5, 0.5)

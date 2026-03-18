@@ -578,13 +578,13 @@ Space to jump"
 metadata/_edit_use_anchors_ = true
 
 [node name="moveHint2" type="Label" parent="TileMap" unique_id=59474298]
-offset_left = -139.0
-offset_top = -21.0
-offset_right = 87.0
-offset_bottom = 28.0
+offset_left = -151.0
+offset_top = -22.0
+offset_right = 75.0
+offset_bottom = 27.0
 rotation = -0.0011892566
 scale = Vector2(0.29, 0.29)
-text = "READ"
+text = "PRESS E TO READ"
 metadata/_edit_use_anchors_ = true
 
 [node name="moveHint3" type="Label" parent="TileMap" unique_id=1962591912]
