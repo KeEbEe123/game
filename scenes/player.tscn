@@ -102,7 +102,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjrip"]
-size = Vector2(18, 50.5)
+size = Vector2(18, 54.25)
 
 [node name="Player" type="CharacterBody2D" unique_id=1370454869 groups=["player"]]
 script = ExtResource("1_qhqgy")
@@ -114,5 +114,5 @@ animation = &"walkForward"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=198637509]
-position = Vector2(0, -31)
+position = Vector2(0, -29.125)
 shape = SubResource("RectangleShape2D_fjrip")
