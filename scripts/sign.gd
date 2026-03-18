@@ -6,7 +6,7 @@ var popup_open = false
 var message_index = 0
 
 var message_parts = [
-	"I gave you a letter for our anniversary...",
+	"I gave you a summoning spell for our anniversary...",
 	"But an evil sorceress M",
 	"magically ripped it into 4 pieces",
 	"and scattered them across the world.",
