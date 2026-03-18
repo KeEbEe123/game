@@ -12,7 +12,7 @@ var message_parts = [
 	"and scattered them across the world.",
 	"Your mission is to find all 4 of them",
 	"and piece them together.",
-	"Only then can you read the letter",
+	"Only then can you perform the spell",
 	"and summon me back into the world."
 ]
 
