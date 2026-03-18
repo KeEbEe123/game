@@ -594,7 +594,7 @@ offset_right = 357.0
 offset_bottom = 11.0
 rotation = -0.0011892566
 scale = Vector2(0.29, 0.29)
-text = "hint: never gonna give you UP"
+text = "never gonna give you UP"
 metadata/_edit_use_anchors_ = true
 
 [node name="moveHint4" type="Label" parent="TileMap" unique_id=2139314495]
@@ -605,7 +605,7 @@ offset_bottom = 55.0
 rotation = -0.0011892566
 scale = Vector2(0.29, 0.29)
 theme_override_font_sizes/font_size = 17
-text = "hint: never gonna give you DOWN"
+text = "never gonna let you DOWN"
 metadata/_edit_use_anchors_ = true
 
 [node name="Platform" parent="." unique_id=1136283686 instance=ExtResource("3_vtaks")]
