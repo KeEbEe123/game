@@ -12,7 +12,7 @@ var dialogue_lines = [
 	"YOU MADE IT",
 	"I missed you so much",
 	"I love youuuu anushka <3",
-	"...",
+	"Happy anniversary <3",
 	"we kiss"
 ]
 
