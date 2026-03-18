@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c2vxa0hc26ugk"]
+
+[ext_resource type="Script" uid="uid://d28ycc4yg1ncl" path="res://scripts/sign.gd" id="1_1t52y"]
+[ext_resource type="Texture2D" uid="uid://dytv4k675qnsu" path="res://assets/sprites/world_tileset.png" id="2_kin2u"]
+[ext_resource type="PackedScene" uid="uid://kiq0pigpf63n" path="res://scenes/popup_ui.tscn" id="3_kin2u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3wikv"]
+size = Vector2(21, 17)
+
+[node name="Sign" type="Node2D" unique_id=2080743542 node_paths=PackedStringArray("popup")]
+script = ExtResource("1_1t52y")
+popup = NodePath("PopupUI")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=468020967]
+texture = ExtResource("2_kin2u")
+region_enabled = true
+region_rect = Rect2(128.37042, 48.5716, 15.187042, 15.178398)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=731747904]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1779283925]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_3wikv")
+
+[node name="PopupUI" parent="." unique_id=1975754777 instance=ExtResource("3_kin2u")]

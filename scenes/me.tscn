@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://o46wvx1ypxfg"]
+
+[ext_resource type="Texture2D" uid="uid://bxcptlvg5bcjl" path="res://assets/sprites/me.png" id="1_4snj4"]
+[ext_resource type="Script" uid="uid://r3jk6iax7qot" path="res://scripts/me.gd" id="1_ktyro"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktyro"]
+size = Vector2(120, 203)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktyro"]
+atlas = ExtResource("1_4snj4")
+region = Rect2(920, 0, 920, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kc1f0"]
+atlas = ExtResource("1_4snj4")
+region = Rect2(0, 0, 920, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plysd"]
+atlas = ExtResource("1_4snj4")
+region = Rect2(920, 0, 920, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boive"]
+atlas = ExtResource("1_4snj4")
+region = Rect2(1840, 0, 920, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ici5"]
+atlas = ExtResource("1_4snj4")
+region = Rect2(2760, 0, 920, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rpolc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktyro")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kc1f0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_plysd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boive")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ici5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=142530577]
+script = ExtResource("1_ktyro")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=809313276]
+position = Vector2(61, -99.5)
+shape = SubResource("RectangleShape2D_ktyro")
+debug_color = Color(0, 0.5741517, 0.8304721, 0.41960785)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1142481439]
+z_index = 5
+position = Vector2(63, -98.99997)
+rotation = 3.1415925
+scale = Vector2(0.21751331, -0.21751328)
+sprite_frames = SubResource("SpriteFrames_rpolc")
+animation = &"idle"
+autoplay = "idle"

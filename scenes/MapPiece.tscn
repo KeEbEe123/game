@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://couhuycs5biwr"]
+
+[ext_resource type="Script" uid="uid://ce4lxm7a65l08" path="res://scripts/MapPiece.gd" id="1_vf3uy"]
+[ext_resource type="Texture2D" uid="uid://de15dsdvy2jgw" path="res://assets/mapPieces/piece_0.png" id="2_vecq6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vecq6"]
+
+[node name="Area2D" type="Area2D" unique_id=1106697038]
+script = ExtResource("1_vf3uy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=537984617]
+position = Vector2(-7.500001, -7.500001)
+scale = Vector2(0.53124994, 0.53124994)
+shape = SubResource("RectangleShape2D_vecq6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1918660848]
+position = Vector2(-7.500001, -7.500001)
+scale = Vector2(0.53124994, 0.53124994)
+texture = ExtResource("2_vecq6")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1741685702]
+emitting = false
+amount = 20
+lifetime = 0.5
+speed_scale = 2.0
+explosiveness = 1.0

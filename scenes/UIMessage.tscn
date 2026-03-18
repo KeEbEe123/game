@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://knqx115tv2k"]
+
+[ext_resource type="Script" uid="uid://ds46w7gcle3vs" path="res://scripts/UIMessage.gd" id="1_5rywg"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=555972137]
+script = ExtResource("1_5rywg")
+
+[node name="Label" type="Label" parent="." unique_id=755045386]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 36
